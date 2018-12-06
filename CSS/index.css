@@ -49,10 +49,10 @@
 }
 .tabs .tabs-items {
   width: 100%;
-  height: 300px;
+  height: auto;
   display: flex;
   justify-content: center;
-  padding-top: 60px;
+  padding: 60px 0;
 }
 .tabs .tabs-item {
   display: none;
