@@ -141,6 +141,30 @@
   max-height: 100%;
   display: block;
   object-fit: cover;
+  position: relative;
+  filter: brightness(50%);
+}
+.slider__item .slider__content {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.slider__item .slider__content .slider_title {
+  font-family: 'Noto Serif', serif;
+  letter-spacing: 2px;
+}
+.slider__item .slider__content h3 {
+  position: relative;
+  top: 190px;
+  color: rgba(255, 255, 255, 0.868);
+}
+.slider__item .slider__content h1 {
+  font-size: 3rem;
+  color: rgba(255, 255, 255, 0.902);
+  text-align: center;
 }
 .slider__item:nth-child(odd) {
   background-color: black;

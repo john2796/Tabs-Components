@@ -57,5 +57,5 @@ previous.addEventListener('click', () => {
 })
 
 // every 3 seconds change the image ; 
-setInterval(slide, 3000);
+//setInterval(slide, 3000);
 
