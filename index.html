@@ -4,11 +4,13 @@
 <head>
   <title>Advanced Components</title>
   <link rel="stylesheet" href="./CSS/index.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
   <script defer="defer" src="./components/Dropdown/Dropdown.js"></script>
   <script defer="defer" src="./components/Tabs/Tabs.js"></script>
+  <script defer="defer" src="./components/Carousel/Carousel.js"></script>
 
   <div class="header-container">
     <div class="dropdown">
@@ -22,24 +24,48 @@
     <img src="./lambda_logo_light_small.png" class="header" />
   </div>
 
-  <div class="section">
-    <div class="box">
-      <div class="box-title">Box Title 1</div>
-      <div class="box-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce risus nibh, gravida
-        nec felis quis, facilisis facilisis lectus. Nulla ac orci pretium, condimentum orci quis, accumsan nisi.
-        Aliquam erat volutpat. Curabitur cursus mattis libero, at viverra risus hendrerit quis. Fusce imperdiet
-        tristique tortor non tincidunt. Mauris accumsan urna nec augue feugiat porta. Proin vitae magna in ex malesuada
-        laoreet eget a nulla. Aliquam tristique et elit at consequat. In hac habitasse platea dictumst.</div>
-    </div>
-    <div class="box">
-      <div class="box-title">Box Title 2</div>
-      <div class="box-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce risus nibh, gravida
-        nec felis quis, facilisis facilisis lectus. Nulla ac orci pretium, condimentum orci quis, accumsan nisi.
-        Aliquam erat volutpat. Curabitur cursus mattis libero, at viverra risus hendrerit quis. Fusce imperdiet
-        tristique tortor non tincidunt. Mauris accumsan urna nec augue feugiat porta. Proin vitae magna in ex malesuada
-        laoreet eget a nulla. Aliquam tristique et elit at consequat. In hac habitasse platea dictumst.</div>
-    </div>
-  </div>
+
+  <!-- carousel starts Here  -->
+  <section class="carousel_container">
+    <section id="slider">
+      <button class="slider_left_btn">
+        <i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
+      </button>
+      <div class="slider-wrapper">
+        <div class="slider__item ">
+          <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1200"
+            alt="coding_1">
+        </div>
+        <div class="slider__item">
+          <img src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1200"
+            alt="coding_2">
+        </div>
+        <div class="slider__item">
+          <img src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1200"
+            alt="coding_3">
+        </div>
+        <div class="slider__item">
+          <img src="https://images.pexels.com/photos/248515/pexels-photo-248515.png?auto=compress&cs=tinysrgb&dpr=1&w=1200"
+            alt="coding_4">
+        </div>
+        <div class="slider__item">
+          <img src="https://images.pexels.com/photos/97077/pexels-photo-97077.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1200"
+            alt="coding_5">
+        </div>
+        <div class="slider__item">
+          <img src="https://images.pexels.com/photos/249798/pexels-photo-249798.png?auto=compress&cs=tinysrgb&dpr=1&w=1200"
+            alt="coding_6">
+        </div>
+        <div class="slider__item">
+          <img src="https://images.pexels.com/photos/276452/pexels-photo-276452.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1200"
+            alt="coding_6">
+        </div>
+      </div>
+      <button class="slider_right_btn">
+        <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+      </button>
+    </section>
+  </section> <!-- carousel Ends Here -->
 
   <div class="section">
     <div class="tabs">
@@ -58,22 +84,25 @@
             Don’t Panic.
 
 
-            <div class="single-link single-link-selected" data-tab="1">Inner Tab 1</div>
-            <div class="single-item single-item-selected" data-tab="1">
-              <div class="single-item-title">Quote 1</div>
-              <div class="single-item-description">
-                Inside Tab 1.
-              </div>
-            </div>
+            <!-- Single tab start -->
+
+            <!-- Single tab Ends -->
+
+
 
           </div>
         </div>
         <div class="tabs-item" data-tab="2">
           <div class="tabs-item-title">Quote 2</div>
           <div class="tabs-item-description">
-            Curiously enough, the only thing that went through the mind of the bowl of petunias as it fell was Oh no,
+            Curiously enough, the only thing that went through the mind of the bowl of petunias as it fell
+            was
+            Oh
+            no,
             not again. Many
-            people have speculated that if we knew exactly why the bowl of petunias had thought that we would know a
+            people have speculated that if we knew exactly why the bowl of petunias had thought that we
+            would
+            know a
             lot more about the
             nature of the Universe than we do now.
           </div>
@@ -81,13 +110,20 @@
         <div class="tabs-item" data-tab="3">
           <div class="tabs-item-title">Quote 3</div>
           <div class="tabs-item-description">
-            It is known that there are an infinite number of worlds, simply because there is an infinite amount of
+            It is known that there are an infinite number of worlds, simply because there is an infinite
+            amount
+            of
             space for them to
-            be in. However, not every one of them is inhabited. Therefore, there must be a finite number of inhabited
+            be in. However, not every one of them is inhabited. Therefore, there must be a finite number of
+            inhabited
             worlds. Any finite
-            number divided by infinity is as near to nothing as makes no odds, so the average population of all the
+            number divided by infinity is as near to nothing as makes no odds, so the average population of
+            all
+            the
             planets in the Universe
-            can be said to be zero. From this it follows that the population of the whole Universe is also zero, and
+            can be said to be zero. From this it follows that the population of the whole Universe is also
+            zero,
+            and
             that any people
             you may meet from time to time are merely the products of a deranged imagination.
           </div>
@@ -95,9 +131,13 @@
         <div class="tabs-item" data-tab="4">
           <div class="tabs-item-title">Quote 4</div>
           <div class="tabs-item-description">
-            There is a theory which states that if ever anyone discovers exactly what the Universe is for and why it is
+            There is a theory which states that if ever anyone discovers exactly what the Universe is for
+            and
+            why
+            it is
             here, it will
-            instantly disappear and be replaced by something even more bizarre and inexplicable. There is another
+            instantly disappear and be replaced by something even more bizarre and inexplicable. There is
+            another
             theory which states
             that this has already happened.
           </div>
@@ -106,13 +146,22 @@
         <div class="tabs-item" data-tab="5">
           <div class="tabs-item-title">Quote 5</div>
           <div class="tabs-item-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptas facere recusandae obcaecati,
-            dicta sed debitis quaerat unde inventore itaque voluptatum illum veritatis commodi vel neque quasi laborum
-            cumque? Earum omnis obcaecati cupiditate perferendis iure illo tempora doloribus aliquid, corrupti
-            voluptatem dolore doloremque accusantium corporis quas impedit, reprehenderit ut. Nisi tenetur repudiandae
-            incidunt praesentium rem minima rerum accusantium, laborum corporis ullam culpa exercitationem reiciendis
-            voluptatibus recusandae reprehenderit, obcaecati velit sit nam nemo at natus? Maiores earum voluptatem ut
-            quasi error nesciunt, ab, qui velit expedita eius accusamus eos. Omnis, adipisci! Exercitationem, iste
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptas facere recusandae
+            obcaecati,
+            dicta sed debitis quaerat unde inventore itaque voluptatum illum veritatis commodi vel neque
+            quasi
+            laborum
+            cumque? Earum omnis obcaecati cupiditate perferendis iure illo tempora doloribus aliquid,
+            corrupti
+            voluptatem dolore doloremque accusantium corporis quas impedit, reprehenderit ut. Nisi tenetur
+            repudiandae
+            incidunt praesentium rem minima rerum accusantium, laborum corporis ullam culpa exercitationem
+            reiciendis
+            voluptatibus recusandae reprehenderit, obcaecati velit sit nam nemo at natus? Maiores earum
+            voluptatem ut
+            quasi error nesciunt, ab, qui velit expedita eius accusamus eos. Omnis, adipisci!
+            Exercitationem,
+            iste
             voluptatibus magnam veniam nesciunt temporibus labore ipsam error.
           </div>
         </div>
@@ -120,23 +169,42 @@
         <div class="tabs-item" data-tab="6">
           <div class="tabs-item-title">Quote 6</div>
           <div class="tabs-item-description">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut cupiditate culpa impedit id corrupti? Aliquam,
-            perspiciatis soluta eaque fugit quidem animi harum, unde dicta fugiat voluptatem corporis eligendi labore
-            in debitis fuga consequatur iure iste recusandae reiciendis. Ea doloremque reprehenderit, illo consequuntur
-            aspernatur dolorem consectetur voluptatum, dolores esse delectus reiciendis tempore ipsam! Hic, unde
-            voluptate? Nihil ullam illo maxime alias odit natus at possimus obcaecati excepturi debitis, amet dolores
-            fugit, vel, totam consequatur deserunt quidem. Atque quo beatae deleniti! Repellendus accusantium esse
-            voluptate, dignissimos numquam suscipit nemo reprehenderit laborum hic ducimus quo temporibus quis natus
-            ullam quisquam ipsum, voluptatum porro inventore neque libero quam. Quisquam a, voluptas accusamus incidunt
-            repudiandae odio, eius, vitae explicabo similique excepturi ut deleniti fugit assumenda maxime debitis
-            numquam magni! Nostrum, officia incidunt. Accusamus est obcaecati autem, pariatur recusandae eius? Saepe,
-            tenetur placeat eos expedita id mollitia sapiente, vel odit, eaque error corporis rem odio nobis.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut cupiditate culpa impedit id
+            corrupti?
+            Aliquam,
+            perspiciatis soluta eaque fugit quidem animi harum, unde dicta fugiat voluptatem corporis
+            eligendi
+            labore
+            in debitis fuga consequatur iure iste recusandae reiciendis. Ea doloremque reprehenderit, illo
+            consequuntur
+            aspernatur dolorem consectetur voluptatum, dolores esse delectus reiciendis tempore ipsam! Hic,
+            unde
+            voluptate? Nihil ullam illo maxime alias odit natus at possimus obcaecati excepturi debitis,
+            amet
+            dolores
+            fugit, vel, totam consequatur deserunt quidem. Atque quo beatae deleniti! Repellendus
+            accusantium
+            esse
+            voluptate, dignissimos numquam suscipit nemo reprehenderit laborum hic ducimus quo temporibus
+            quis
+            natus
+            ullam quisquam ipsum, voluptatum porro inventore neque libero quam. Quisquam a, voluptas
+            accusamus
+            incidunt
+            repudiandae odio, eius, vitae explicabo similique excepturi ut deleniti fugit assumenda maxime
+            debitis
+            numquam magni! Nostrum, officia incidunt. Accusamus est obcaecati autem, pariatur recusandae
+            eius?
+            Saepe,
+            tenetur placeat eos expedita id mollitia sapiente, vel odit, eaque error corporis rem odio
+            nobis.
           </div>
         </div>
       </div>
     </div>
   </div>
   </div>
+
 </body>
 
 </html>

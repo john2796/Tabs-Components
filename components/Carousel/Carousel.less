@@ -1,0 +1,79 @@
+.carousel_container {
+  position: relative;
+
+}
+
+.slider {
+  width: 100%;
+  position: relative;
+
+}
+
+
+.slider_right_btn,
+.slider_left_btn {
+  position: relative;
+  outline: none;
+  z-index: 999;
+  font-size: 2rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: black;
+  border-radius: 50%;
+  color: @lambda-red;
+
+  &:active {
+    transform: translateY(4px);
+  }
+
+  &:hover {
+    color: @lambda-light-red;
+  }
+}
+
+.slider_left_btn {
+  top: 18.2vh;
+  left: 1.9vw;
+}
+
+.slider_right_btn {
+  left: 95vw;
+  top: 15vh
+}
+
+
+.slider__item {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+
+
+  img {
+    max-width: 1200px;
+    max-height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+
+}
+
+.slider__item:nth-child(odd) {
+  background-color: black;
+}
+
+.slider__item:nth-child(even) {
+  background-color: black;
+}
+
+.showing {
+  // z-index: 1;
+  opacity: 1;
+
+}
