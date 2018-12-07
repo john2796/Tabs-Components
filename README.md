@@ -1,3 +1,5 @@
+Your site is ready to be published at https://john2796.github.io/Tabs-Components/.
+
 # TABS-COMPONENTS
 
 Topics:
